@@ -17,7 +17,7 @@ apply plugin: "kotlin-android"
             }
 dependencies {
     api(project(":module06:module086:module1"))
-    api(project(":module06:module218:module6"))
+    // api(project(":module06:module218:module6"))
     api(project(":module06:module353:module1"))
     api("com.squareup.workflow:workflow-core-jvm:0.23.2")
     api("com.squareup.workflow:workflow-ui-core-android:0.23.2")
@@ -30,7 +30,7 @@ dependencies {
     implementation(project(":module06:module202:module1"))
     implementation(project(":module06:module207"))
     implementation(project(":module06:module211:module1"))
-    implementation(project(":module06:module218:module6"))
+    // implementation(project(":module06:module218:module6"))
     implementation(project(":module06:module238:module5"))
     implementation(project(":module06:module268"))
     implementation(project(":module06:module324:module4"))
