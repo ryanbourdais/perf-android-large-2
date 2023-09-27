@@ -32,7 +32,7 @@ jobs:
       - android/start-emulator-and-run-tests:
           pre-run-tests-steps:
             - run: echo "beginning tests"
-          test-command: flutter test
+          test-command: './gradlew clean'
           pre-emulator-wait-steps:
             - run: echo "waiting for emulator"
           post-emulator-wait-steps:
