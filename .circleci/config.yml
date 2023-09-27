@@ -25,10 +25,19 @@ jobs:
       - run: ./gradlew :module07:build
       - run: ./gradlew :module08:build
       - run: ./gradlew :module09:build
-      # - run: ./gradlew :module11:build
       - run: ./gradlew :module12:build
       - run: ./gradlew :module13:build
       - run: ./gradlew :module14:build
+      - run: ./gradlew :module15:build
+      - run: ./gradlew :module16:build
+      - run: ./gradlew :module17:build
+      - run: ./gradlew :module18:build
+      - run: ./gradlew :module19:build
+      - run: ./gradlew :module20:build
+      - run: ./gradlew :module21:build
+      - run: ./gradlew :module22:build
+      - run: ./gradlew :module23:build
+      - run: ./gradlew :module24:build
       - android/start-emulator-and-run-tests:
           pre-run-tests-steps:
             - run: echo "beginning tests"
@@ -57,6 +66,9 @@ jobs:
     resource_class: << parameters.resource-class >>
     steps:
       - checkout
+      - run: ./gradlew :module01:build
+      - run: ./gradlew :module02:build
+      - run: ./gradlew :module03:build
       - run: ./gradlew :module04:build
       - run: ./gradlew :module05:build
       - run: ./gradlew :module06:build
@@ -66,15 +78,25 @@ jobs:
       - run: ./gradlew :module12:build
       - run: ./gradlew :module13:build
       - run: ./gradlew :module14:build
+      - run: ./gradlew :module15:build
+      - run: ./gradlew :module16:build
+      - run: ./gradlew :module17:build
+      - run: ./gradlew :module18:build
+      - run: ./gradlew :module19:build
+      - run: ./gradlew :module20:build
+      - run: ./gradlew :module21:build
+      - run: ./gradlew :module22:build
+      - run: ./gradlew :module23:build
+      - run: ./gradlew :module24:build
       - android/start-emulator-and-run-tests:
           pre-run-tests-steps:
             - run: echo "beginning tests"
-          test-command: flutter test
+          test-command: './gradlew clean'
           pre-emulator-wait-steps:
             - run: echo "waiting for emulator"
           post-emulator-wait-steps:
             - run: echo "emulator running"
-          post-emulator-launch-assemble-command: './gradlew test'
+          post-emulator-launch-assemble-command: './gradlew clean'
           post-run-tests-steps: 
             - run: echo "run test done"
             - run: mkdir testdata
