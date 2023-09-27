@@ -16,7 +16,17 @@ jobs:
     resource_class: << parameters.resource-class >>
     steps:
       - checkout
-      - run: gradle build --info
+      - run: gradle :module4:build
+      - run: gradle :module5:build
+      - run: gradle :module6:build
+      - run: gradle :module7:build
+      - run: gradle :module8:build
+      - run: gradle :module9:build
+      - run: gradle :module10:build
+      - run: gradle :module11:build
+      - run: gradle :module12:build
+      - run: gradle :module13:build
+      - run: gradle :module14:build
       - android/start-emulator-and-run-tests:
           pre-run-tests-steps:
             - run: echo "beginning tests"
@@ -45,7 +55,17 @@ jobs:
     resource_class: << parameters.resource-class >>
     steps:
       - checkout
-      - run: gradle build --debug
+      - run: gradle :module4:build
+      - run: gradle :module5:build
+      - run: gradle :module6:build
+      - run: gradle :module7:build
+      - run: gradle :module8:build
+      - run: gradle :module9:build
+      - run: gradle :module10:build
+      - run: gradle :module11:build
+      - run: gradle :module12:build
+      - run: gradle :module13:build
+      - run: gradle :module14:build
       - android/start-emulator-and-run-tests:
           pre-run-tests-steps:
             - run: echo "beginning tests"
