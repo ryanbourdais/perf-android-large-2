@@ -48,7 +48,7 @@ dependencies {
     implementation(project(":module06:module207"))
     implementation(project(":module06:module220:module3"))
     implementation(project(":module06:module221:module3"))
-    implementation(project(":module06:module219:module5"))
+    // implementation(project(":module06:module219:module5"))
     implementation(project(":module06:module259:module3"))
     implementation(project(":module06:module297:module2"))
     implementation(project(":module06:module298:module2"))
