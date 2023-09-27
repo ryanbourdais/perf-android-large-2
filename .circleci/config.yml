@@ -16,13 +16,15 @@ jobs:
     resource_class: << parameters.resource-class >>
     steps:
       - checkout
+      - run: ./gradlew :module01:build
+      - run: ./gradlew :module02:build
+      - run: ./gradlew :module03:build
       - run: ./gradlew :module04:build
       - run: ./gradlew :module05:build
       - run: ./gradlew :module06:build
       - run: ./gradlew :module07:build
       - run: ./gradlew :module08:build
       - run: ./gradlew :module09:build
-      - run: ./gradlew :module10:build
       - run: ./gradlew :module11:build
       - run: ./gradlew :module12:build
       - run: ./gradlew :module13:build
@@ -61,7 +63,6 @@ jobs:
       - run: ./gradlew :module07:build
       - run: ./gradlew :module08:build
       - run: ./gradlew :module09:build
-      - run: ./gradlew :module10:build
       - run: ./gradlew :module11:build
       - run: ./gradlew :module12:build
       - run: ./gradlew :module13:build
