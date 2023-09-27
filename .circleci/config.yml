@@ -16,17 +16,17 @@ jobs:
     resource_class: << parameters.resource-class >>
     steps:
       - checkout
-      - run: gradle :module04:build
-      - run: gradle :module05:build
-      - run: gradle :module06:build
-      - run: gradle :module07:build
-      - run: gradle :module08:build
-      - run: gradle :module09:build
-      - run: gradle :module10:build
-      - run: gradle :module11:build
-      - run: gradle :module12:build
-      - run: gradle :module13:build
-      - run: gradle :module14:build
+      - run: ./gradlew :module04:build
+      - run: ./gradlew :module05:build
+      - run: ./gradlew :module06:build
+      - run: ./gradlew :module07:build
+      - run: ./gradlew :module08:build
+      - run: ./gradlew :module09:build
+      - run: ./gradlew :module10:build
+      - run: ./gradlew :module11:build
+      - run: ./gradlew :module12:build
+      - run: ./gradlew :module13:build
+      - run: ./gradlew :module14:build
       - android/start-emulator-and-run-tests:
           pre-run-tests-steps:
             - run: echo "beginning tests"
@@ -55,17 +55,17 @@ jobs:
     resource_class: << parameters.resource-class >>
     steps:
       - checkout
-      - run: gradle :module04:build
-      - run: gradle :module05:build
-      - run: gradle :module06:build
-      - run: gradle :module07:build
-      - run: gradle :module08:build
-      - run: gradle :module09:build
-      - run: gradle :module10:build
-      - run: gradle :module11:build
-      - run: gradle :module12:build
-      - run: gradle :module13:build
-      - run: gradle :module14:build
+      - run: ./gradlew :module04:build
+      - run: ./gradlew :module05:build
+      - run: ./gradlew :module06:build
+      - run: ./gradlew :module07:build
+      - run: ./gradlew :module08:build
+      - run: ./gradlew :module09:build
+      - run: ./gradlew :module10:build
+      - run: ./gradlew :module11:build
+      - run: ./gradlew :module12:build
+      - run: ./gradlew :module13:build
+      - run: ./gradlew :module14:build
       - android/start-emulator-and-run-tests:
           pre-run-tests-steps:
             - run: echo "beginning tests"
