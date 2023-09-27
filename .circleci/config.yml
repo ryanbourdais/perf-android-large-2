@@ -37,7 +37,7 @@ jobs:
             - run: echo "waiting for emulator"
           post-emulator-wait-steps:
             - run: echo "emulator running"
-          post-emulator-launch-assemble-command: './gradlew test'
+          post-emulator-launch-assemble-command: './gradlew :module01:test'
           post-run-tests-steps: 
             - run: echo "run test done"
             - run: mkdir testdata
