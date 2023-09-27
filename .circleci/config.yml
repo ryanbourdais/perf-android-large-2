@@ -16,12 +16,12 @@ jobs:
     resource_class: << parameters.resource-class >>
     steps:
       - checkout
-      - run: gradle :module4:build
-      - run: gradle :module5:build
-      - run: gradle :module6:build
-      - run: gradle :module7:build
-      - run: gradle :module8:build
-      - run: gradle :module9:build
+      - run: gradle :module04:build
+      - run: gradle :module05:build
+      - run: gradle :module06:build
+      - run: gradle :module07:build
+      - run: gradle :module08:build
+      - run: gradle :module09:build
       - run: gradle :module10:build
       - run: gradle :module11:build
       - run: gradle :module12:build
@@ -55,12 +55,12 @@ jobs:
     resource_class: << parameters.resource-class >>
     steps:
       - checkout
-      - run: gradle :module4:build
-      - run: gradle :module5:build
-      - run: gradle :module6:build
-      - run: gradle :module7:build
-      - run: gradle :module8:build
-      - run: gradle :module9:build
+      - run: gradle :module04:build
+      - run: gradle :module05:build
+      - run: gradle :module06:build
+      - run: gradle :module07:build
+      - run: gradle :module08:build
+      - run: gradle :module09:build
       - run: gradle :module10:build
       - run: gradle :module11:build
       - run: gradle :module12:build
