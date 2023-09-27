@@ -63,7 +63,6 @@ jobs:
       - run: ./gradlew :module07:build
       - run: ./gradlew :module08:build
       - run: ./gradlew :module09:build
-      - run: ./gradlew :module11:build
       - run: ./gradlew :module12:build
       - run: ./gradlew :module13:build
       - run: ./gradlew :module14:build
