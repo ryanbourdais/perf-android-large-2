@@ -60,23 +60,23 @@ jobs:
       - run: gradle --stop
       - run: ./gradlew :module24:build
       - run: gradle --stop
-      - android/start-emulator-and-run-tests:
-          pre-run-tests-steps:
-            - run: echo "beginning tests"
-          test-command: './gradlew clean'
-          pre-emulator-wait-steps:
-            - run: echo "waiting for emulator"
-          post-emulator-wait-steps:
-            - run: echo "emulator running"
-          post-emulator-launch-assemble-command: './gradlew clean'
-          post-run-tests-steps: 
-            - run: echo "run test done"
-            - run: mkdir testdata
-            - run: adb pull storage .
-          additional-avd-args: "-d pixel_3a -c 1G"
-          additional-emulator-args: "-memory 4096 -cores 3 -writable-system"
-          avd-name: 'testing'
-          system-image: system-images;android-34;google_apis_playstore;x86_64
+      # - android/start-emulator-and-run-tests:
+      #     pre-run-tests-steps:
+      #       - run: echo "beginning tests"
+      #     test-command: './gradlew clean'
+      #     pre-emulator-wait-steps:
+      #       - run: echo "waiting for emulator"
+      #     post-emulator-wait-steps:
+      #       - run: echo "emulator running"
+      #     post-emulator-launch-assemble-command: './gradlew clean'
+      #     post-run-tests-steps: 
+      #       - run: echo "run test done"
+      #       - run: mkdir testdata
+      #       - run: adb pull storage .
+      #     additional-avd-args: "-d pixel_3a -c 1G"
+      #     additional-emulator-args: "-memory 4096 -cores 3 -writable-system"
+      #     avd-name: 'testing'
+      #     system-image: system-images;android-34;google_apis_playstore;x86_64
 
   docker-build:
     parameters:
@@ -132,23 +132,23 @@ jobs:
       - run: gradle --stop
       - run: ./gradlew :module24:build
       - run: gradle --stop
-      - android/start-emulator-and-run-tests:
-          pre-run-tests-steps:
-            - run: echo "beginning tests"
-          test-command: './gradlew clean'
-          pre-emulator-wait-steps:
-            - run: echo "waiting for emulator"
-          post-emulator-wait-steps:
-            - run: echo "emulator running"
-          post-emulator-launch-assemble-command: './gradlew clean'
-          post-run-tests-steps: 
-            - run: echo "run test done"
-            - run: mkdir testdata
-            - run: adb pull storage .
-          additional-avd-args: "-d pixel_3a -c 1G"
-          additional-emulator-args: "-memory 4096 -cores 3 -writable-system"
-          avd-name: 'testing'
-          system-image: system-images;android-34;google_apis_playstore;x86_64
+      # - android/start-emulator-and-run-tests:
+      #     pre-run-tests-steps:
+      #       - run: echo "beginning tests"
+      #     test-command: './gradlew clean'
+      #     pre-emulator-wait-steps:
+      #       - run: echo "waiting for emulator"
+      #     post-emulator-wait-steps:
+      #       - run: echo "emulator running"
+      #     post-emulator-launch-assemble-command: './gradlew clean'
+      #     post-run-tests-steps: 
+      #       - run: echo "run test done"
+      #       - run: mkdir testdata
+      #       - run: adb pull storage .
+      #     additional-avd-args: "-d pixel_3a -c 1G"
+      #     additional-emulator-args: "-memory 4096 -cores 3 -writable-system"
+      #     avd-name: 'testing'
+      #     system-image: system-images;android-34;google_apis_playstore;x86_64
 
 workflows:
   docker-and-machine-build:
