@@ -18,26 +18,37 @@ jobs:
       - checkout
       - run: ./gradlew :module01:build
       - run: ./gradlew :module02:build
+      - run: ./gradlew clean
       - run: ./gradlew :module03:build
       - run: ./gradlew :module04:build
+      - run: ./gradlew clean
       - run: ./gradlew :module05:build
       - run: ./gradlew :module06:build
+      - run: ./gradlew clean
       - run: ./gradlew :module07:build
       - run: ./gradlew :module08:build
+      - run: ./gradlew clean
       - run: ./gradlew :module09:build
       - run: ./gradlew :module12:build
+      - run: ./gradlew clean
       - run: ./gradlew :module13:build
       - run: ./gradlew :module14:build
+      - run: ./gradlew clean
       - run: ./gradlew :module15:build
       - run: ./gradlew :module16:build
+      - run: ./gradlew clean
       - run: ./gradlew :module17:build
       - run: ./gradlew :module18:build
+      - run: ./gradlew clean
       - run: ./gradlew :module19:build
       - run: ./gradlew :module20:build
+      - run: ./gradlew clean
       - run: ./gradlew :module21:build
       - run: ./gradlew :module22:build
+      - run: ./gradlew clean
       - run: ./gradlew :module23:build
       - run: ./gradlew :module24:build
+      - run: ./gradlew clean
       - android/start-emulator-and-run-tests:
           pre-run-tests-steps:
             - run: echo "beginning tests"
