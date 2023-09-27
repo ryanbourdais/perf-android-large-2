@@ -16,7 +16,7 @@ jobs:
     resource_class: << parameters.resource-class >>
     steps:
       - checkout
-      - run: gradle build --warning-mode all
+      - run: gradle build --info
       - android/start-emulator-and-run-tests:
           pre-run-tests-steps:
             - run: echo "beginning tests"
@@ -45,7 +45,7 @@ jobs:
     resource_class: << parameters.resource-class >>
     steps:
       - checkout
-      - run: gradle build --warning-mode all
+      - run: gradle build --debug
       - android/start-emulator-and-run-tests:
           pre-run-tests-steps:
             - run: echo "beginning tests"
