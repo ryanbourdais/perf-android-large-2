@@ -16,68 +16,68 @@ jobs:
     resource_class: << parameters.resource-class >>
     steps:
       - checkout
-      - run: ./gradlew :module01:build
-      - run: gradle --stop
-      - run: ./gradlew :module02:build
-      - run: gradle --stop
-      - run: ./gradlew :module03:build
-      - run: gradle --stop
-      - run: ./gradlew :module04:build
-      - run: gradle --stop
-      - run: ./gradlew :module05:build
-      - run: gradle --stop
-      - run: ./gradlew :module06:build
-      - run: gradle --stop
-      - run: ./gradlew :module07:build
-      - run: gradle --stop
-      - run: ./gradlew :module08:build
-      - run: gradle --stop
-      - run: ./gradlew :module09:build
-      - run: gradle --stop
-      - run: ./gradlew :module12:build
-      - run: gradle --stop
-      - run: ./gradlew :module13:build
-      - run: gradle --stop
-      - run: ./gradlew :module14:build
-      - run: gradle --stop
-      - run: ./gradlew :module15:build
-      - run: gradle --stop
-      - run: ./gradlew :module16:build
-      - run: gradle --stop
-      - run: ./gradlew :module17:build
-      - run: gradle --stop
-      - run: ./gradlew :module18:build
-      - run: gradle --stop
-      - run: ./gradlew :module19:build
-      - run: gradle --stop
-      - run: ./gradlew :module20:build
-      - run: gradle --stop
-      - run: ./gradlew :module21:build
-      - run: gradle --stop
-      - run: ./gradlew :module22:build
-      - run: gradle --stop
-      - run: ./gradlew :module23:build
-      - run: gradle --stop
-      - run: ./gradlew :module24:build
-      - run: gradle --stop
+      # - run: ./gradlew :module01:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module02:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module03:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module04:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module05:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module06:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module07:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module08:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module09:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module12:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module13:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module14:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module15:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module16:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module17:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module18:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module19:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module20:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module21:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module22:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module23:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module24:build
+      # - run: gradle --stop
       - run: gradle aDAT
-      # - android/start-emulator-and-run-tests:
-      #     pre-run-tests-steps:
-      #       - run: echo "beginning tests"
-      #     test-command: './gradlew clean'
-      #     pre-emulator-wait-steps:
-      #       - run: echo "waiting for emulator"
-      #     post-emulator-wait-steps:
-      #       - run: echo "emulator running"
-      #     post-emulator-launch-assemble-command: './gradlew clean'
-      #     post-run-tests-steps: 
-      #       - run: echo "run test done"
-      #       - run: mkdir testdata
-      #       - run: adb pull storage .
-      #     additional-avd-args: "-d pixel_3a -c 1G"
-      #     additional-emulator-args: "-memory 4096 -cores 3 -writable-system"
-      #     avd-name: 'testing'
-      #     system-image: system-images;android-34;google_apis_playstore;x86_64
+      - android/start-emulator-and-run-tests:
+          pre-run-tests-steps:
+            - run: echo "beginning tests"
+          test-command: './gradlew aDAT'
+          pre-emulator-wait-steps:
+            - run: echo "waiting for emulator"
+          post-emulator-wait-steps:
+            - run: echo "emulator running"
+          post-emulator-launch-assemble-command: './gradlew aD'
+          post-run-tests-steps: 
+            - run: echo "run test done"
+            - run: mkdir testdata
+            - run: adb pull storage .
+          additional-avd-args: "-d pixel_3a -c 1G"
+          additional-emulator-args: "-memory 4096 -cores 3 -writable-system"
+          avd-name: 'testing'
+          system-image: system-images;android-34;google_apis_playstore;x86_64
 
   docker-build:
     parameters:
@@ -89,68 +89,68 @@ jobs:
     resource_class: << parameters.resource-class >>
     steps:
       - checkout
-      - run: ./gradlew :module01:build
-      - run: gradle --stop
-      - run: ./gradlew :module02:build
-      - run: gradle --stop
-      - run: ./gradlew :module03:build
-      - run: gradle --stop
-      - run: ./gradlew :module04:build
-      - run: gradle --stop
-      - run: ./gradlew :module05:build
-      - run: gradle --stop
-      - run: ./gradlew :module06:build
-      - run: gradle --stop
-      - run: ./gradlew :module07:build
-      - run: gradle --stop
-      - run: ./gradlew :module08:build
-      - run: gradle --stop
-      - run: ./gradlew :module09:build
-      - run: gradle --stop
-      - run: ./gradlew :module12:build
-      - run: gradle --stop
-      - run: ./gradlew :module13:build
-      - run: gradle --stop
-      - run: ./gradlew :module14:build
-      - run: gradle --stop
-      - run: ./gradlew :module15:build
-      - run: gradle --stop
-      - run: ./gradlew :module16:build
-      - run: gradle --stop
-      - run: ./gradlew :module17:build
-      - run: gradle --stop
-      - run: ./gradlew :module18:build
-      - run: gradle --stop
-      - run: ./gradlew :module19:build
-      - run: gradle --stop
-      - run: ./gradlew :module20:build
-      - run: gradle --stop
-      - run: ./gradlew :module21:build
-      - run: gradle --stop
-      - run: ./gradlew :module22:build
-      - run: gradle --stop
-      - run: ./gradlew :module23:build
-      - run: gradle --stop
-      - run: ./gradlew :module24:build
-      - run: gradle --stop
+      # - run: ./gradlew :module01:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module02:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module03:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module04:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module05:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module06:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module07:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module08:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module09:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module12:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module13:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module14:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module15:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module16:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module17:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module18:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module19:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module20:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module21:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module22:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module23:build
+      # - run: gradle --stop
+      # - run: ./gradlew :module24:build
+      # - run: gradle --stop
       - run: gradle aDAT
-      # - android/start-emulator-and-run-tests:
-      #     pre-run-tests-steps:
-      #       - run: echo "beginning tests"
-      #     test-command: './gradlew clean'
-      #     pre-emulator-wait-steps:
-      #       - run: echo "waiting for emulator"
-      #     post-emulator-wait-steps:
-      #       - run: echo "emulator running"
-      #     post-emulator-launch-assemble-command: './gradlew clean'
-      #     post-run-tests-steps: 
-      #       - run: echo "run test done"
-      #       - run: mkdir testdata
-      #       - run: adb pull storage .
-      #     additional-avd-args: "-d pixel_3a -c 1G"
-      #     additional-emulator-args: "-memory 4096 -cores 3 -writable-system"
-      #     avd-name: 'testing'
-      #     system-image: system-images;android-34;google_apis_playstore;x86_64
+      - android/start-emulator-and-run-tests:
+          pre-run-tests-steps:
+            - run: echo "beginning tests"
+          test-command: './gradlew aDAT'
+          pre-emulator-wait-steps:
+            - run: echo "waiting for emulator"
+          post-emulator-wait-steps:
+            - run: echo "emulator running"
+          post-emulator-launch-assemble-command: './gradlew aD'
+          post-run-tests-steps: 
+            - run: echo "run test done"
+            - run: mkdir testdata
+            - run: adb pull storage .
+          additional-avd-args: "-d pixel_3a -c 1G"
+          additional-emulator-args: "-memory 4096 -cores 3 -writable-system"
+          avd-name: 'testing'
+          system-image: system-images;android-34;google_apis_playstore;x86_64
 
 workflows:
   docker-and-machine-build:
