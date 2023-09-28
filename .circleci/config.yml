@@ -61,6 +61,7 @@ jobs:
       - run: ./gradlew :module24:build
       - run: gradle --stop
       - run: ./gradlew clean --info
+      - run: gradle run
       # - android/start-emulator-and-run-tests:
       #     pre-run-tests-steps:
       #       - run: echo "beginning tests"
@@ -133,7 +134,7 @@ jobs:
       - run: gradle --stop
       - run: ./gradlew :module24:build
       - run: gradle --stop
-      - run: ./gradlew :module01:clean --info
+      - run: gradle run
       # - android/start-emulator-and-run-tests:
       #     pre-run-tests-steps:
       #       - run: echo "beginning tests"
