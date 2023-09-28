@@ -60,7 +60,6 @@ jobs:
       - run: gradle --stop
       - run: ./gradlew :module24:build
       - run: gradle --stop
-      - run: ./gradlew clean --info
       - run: gradle aDAT
       # - android/start-emulator-and-run-tests:
       #     pre-run-tests-steps:
